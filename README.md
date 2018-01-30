@@ -11,6 +11,10 @@ adafruit trinket $6.95 https://www.digikey.com/product-detail/en/adafruit-indust
 ?? PCB
 5v, 8 bit shift reg. $0.43 https://www.digikey.com/product-detail/en/texas-instruments/SN74HC164N/296-8248-5-ND/376946
 
+BEETLE $7.90 https://www.digikey.com/product-detail/en/dfrobot/DFR0282/1738-1016-ND/6588438&?gclid=EAIaIQobChMIo-yCj4WA2QIVUFt-Ch0oTw7_EAQYAyABEgIDAfD_BwE
+UBB + 10 I/o; 20mm x 22mm
+
+
 Part                | Jameco | Digikey | Mouser | other?
 --------------------|--------|---------|--------|---------
 adafruit trinket    |
