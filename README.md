@@ -11,15 +11,25 @@ adafruit trinket $6.95 https://www.digikey.com/product-detail/en/adafruit-indust
 ?? PCB
 5v, 8 bit shift reg. $0.43 https://www.digikey.com/product-detail/en/texas-instruments/SN74HC164N/296-8248-5-ND/376946
 
-BEETLE $7.90 https://www.digikey.com/product-detail/en/dfrobot/DFR0282/1738-1016-ND/6588438&?gclid=EAIaIQobChMIo-yCj4WA2QIVUFt-Ch0oTw7_EAQYAyABEgIDAfD_BwE
+Beetle $7.90 https://www.digikey.com/product-detail/en/dfrobot/DFR0282/1738-1016-ND/6588438&
+?gclid=EAIaIQobChMIo-yCj4WA2QIVUFt-Ch0oTw7_EAQYAyABEgIDAfD_BwE
 UBB + 10 I/o; 20mm x 22mm
 
+http://www.instructables.com/id/Mini-Emoticon-Keyboard/
 
-Part                | Jameco | Digikey | Mouser | other?
---------------------|--------|---------|--------|---------
-adafruit trinket    |
-3.5 mm jack (4)     |
-3.5mm socket (4)    |
+
+Part                |Qty| Jameco | Digikey | Mouser | other?
+--------------------|---|--------|--------:|--------|---------
+Adafruit trinket    |        | $6.95   |
+Adafruit Beetle     |        | $7.90   |
+3.5 mm jack (4)     |        | $0.74   |
+3.5mm socket (4)    |        | $0.84   |
 Case                |
-PCB                 |
-5v, 8 bit shift reg.|
+USB-A to USB=B      |
+Foot switch (4)     |        | $4.00   |
+
+## Resources:
+
+* [Quick Key Adapter, 10 Button
+Keyboard](http://www.instructables.com/id/Quick-Key-Adapter-10-Button-HID-
+Keyboard/) PIC18F14K50. Complete parts kit: $25.00 (sold out) Programable w/Modifier keys.
