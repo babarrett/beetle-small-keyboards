@@ -1,8 +1,27 @@
-# foot-switch
+# Beetle Small Keyboards
 
-With thoughts of support for users with some hand problems.
+## Overview:
 
-by Bruce Barrett
+Sometimes you don't need many keys for a project, and the Arduino Beetle has 10
+I/O pins plus a USB port for small projects. This combination is ideal for:
+
+    * USB based keyboards
+    * Handwired (although PCB options are possible too)
+    * One to 10 keys are trivial
+    * Up to 25 keys are not much harder.
+    * Pogramable with macros, layers, supported by TODO: software
+    * Numeric pads (often 17, 19, 21, or 22 keys)
+    * Converting key "switch testers" to macro pads.
+    * Simple, inexpensive hardware
+
+## Initial project: 4 foot switches
+
+My first project based on this technology is a foot-operated set of 4 (or 8)
+switches. The plan is to support four modifier keys, to b foot-operated. They
+are: Command (or Windows), Option, Control, and Shift.
+
+The thought is these could be used to support users with some hand problems.
+
 
 ## Parts list
 
