@@ -16,7 +16,6 @@ by Bruce Barrett
 Beetle $7.90 [Digikey](https://www.digikey.com/product-detail/en/dfrobot/DFR0282/1738-1016-ND/6588438)
 USB + 10 I/O; 20mm x 22mm
 
-http://www.instructables.com/id/Mini-Emoticon-Keyboard/
 
 
 Part                |Qty| Jameco | Digikey | Mouser | other?
@@ -32,7 +31,7 @@ Estimated total     | xx  |    |
 
 
 
-Part                |Qty| Jameco | 
+Part                |Qty| Jameco |   |  |
 --------------------|---|--------|--------:|--------|---------
 Adafruit Beetle     | 1 |      | $7.90   |
 5 RCA jacks         | 1 |      | $1.95   |
@@ -59,7 +58,8 @@ Part                            |CPU        |I/O | Mhz | Size        |   Notes
 --------------------------------|-----------|---:|----:|-------------|---------
 Beetle 1738-1016-ND             |ATmega32u4 | 10 |16   | 20x22x3.8mm | Arduino Leonardo
 µduino ($18, 15-March)          |ATmega32u4 | 20 |16   | 12x12mm     |
-KeyTee (open-source)            |ATmega32u2 | 20 |16   | 12x12mm     |
+KeyTee (open-source)            |ATmega32u2 | 20 |16   | ?mm     |
+Mega32u2_v2 (open-source)       |ATmega32u2 | 19 |16   | 19.05x19.05mm |  $2.85 at OSHpark + components. USB
 
 
 See also: http://atmega32-avr.com/avr-comparison/
@@ -80,6 +80,10 @@ See also: http://atmega32-avr.com/avr-comparison/
     KeyTee: https://github.com/trebb/keyteehttps://github.com/trebb/keytee
                 
 
+## Related projects:
+
+[Mini-Emoticon-Keyboard](http://www.instructables.com/id/Mini-Emoticon-Keyboard/)
+https://trebb.github.io/keytee/
 
 
 
