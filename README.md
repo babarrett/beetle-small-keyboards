@@ -36,11 +36,11 @@ Part                |Qty| Jameco |          |
 Adafruit Beetle     | 1 |        | $7.90   |
 5 RCA jacks         | 1 |        | $1.95   |
 4 RCA sockets (1x3")| 1 |        | $0.49   |
-Case                | 1 |        | |
+Case                | 1 |        |     |
 USB-A to USB=B      | 1 |       |           |
 Foot switch (4)     | 4 |      | $4.00   |
-                    | xx |      |       |
-Estimated total     | xx  |    |            |
+xx                  | xx|      |       |
+Estimated total     | xx|        |          |
 
 
 
