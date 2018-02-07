@@ -17,10 +17,25 @@ I/O pins plus a USB port for small projects. This combination is ideal for:
 ## Initial project: 4 foot switches
 
 My first project based on this technology is a foot-operated set of 4 (or 8)
-switches. The plan is to support four modifier keys, to b foot-operated. They
+switches. The plan is to support four modifier keys, to be foot-operated. They
 are: Command (or Windows), Option, Control, and Shift.
 
 The thought is these could be used to support users with some hand problems.
+
+Because the Beetle has 10 I/O pins available, and I only need 8, I'll (hand)
+wire then directly.
+
+## Additional project
+
+Again, with 10 I/O pins it is possible to do a standard keyboard scanning matrix
+of 5 x 5 (up to 25 keys), or 4 x 6 (up to 24 keys, with a scan layout that more
+closely matches the physical). These matrixes will require a diode at each
+switch to prevent "ghosting."
+
+For example, searching Amazon for: numeric pad USB, most numeric pads have 17,
+18, 19, 20, 21, or 22 keys on them, so the little Beetle will be quite capable
+for this application.
+
 
 ## Basic Beetle Specifications:
 
