@@ -25,7 +25,22 @@ The thought is these could be used to support users with some hand problems.
 This project will not require the manufacture of any printed circuit boards, 
 and the switches will be hand-wired to the Beetle.
 
-Parts count, and expense are low.
+Parts count, and expenses are low.
+
+Because the Beetle has 10 I/O pins available, and I only need 8, I'll (hand)
+wire then directly.
+
+## Additional project
+
+Again, with 10 I/O pins it is possible to do a standard keyboard scanning matrix
+of 5 x 5 (up to 25 keys), or 4 x 6 (up to 24 keys, with a scan layout that more
+closely matches the physical). These matrixes will require a diode at each
+switch to prevent "ghosting."
+
+For example, searching Amazon for: numeric pad USB, most numeric pads have 17,
+to 22 keys on them, so the little Beetle will be quite capable for this 
+application.
+
 
 ## Parts list
 
@@ -41,30 +56,36 @@ USB + 10 I/O; 20mm x 22mm
 
 
 
-Part                |Qty| Jameco | Digikey | Mouser | other?
---------------------|---|--------|--------:|--------|---------
-Adafruit Beetle     | 1 |      | $7.90   |
-3.5 mm jack (4)     | 4 |      | $0.74   |
-3.5mm socket (4)    | 4 |      | $0.84   |
-Case                | 1 |
-USB-A to USB=B      | 1 |
-Foot switch (4)     | 4 |      | $4.00   |
- | xx | | | | |
-Estimated total     | xx  |    |
+Part                |Qty| Jameco  |URL
+--------------------|---|--------:|----
+Adafruit Beetle     | 1 | $7.90   | 
+5 RCA jacks         | 2 | $1.95   | 
+4 RCA sockets (1x3")| 2 | $0.49   | 
+Case                | 1 |         | 
+USB-A to USB=B      | 1 |         | 
+Foot switch (4)     | 4 | $4.00   | 
+xx                  | xx|         | 
+Estimated total     | xx|         | 
 
 
+## Basic Beetle Specifications:
 
-Part                |Qty| Jameco |          |
---------------------|---|--------|--------:|
-Adafruit Beetle     | 1 |        | $7.90   |
-5 RCA jacks         | 1 |        | $1.95   |
-4 RCA sockets (1x3")| 1 |        | $0.49   |
-Case                | 1 |        |     |
-USB-A to USB=B      | 1 |       |           |
-Foot switch (4)     | 4 |      | $4.00   |
-xx                  | xx|      |       |
-Estimated total     | xx|        |          |
-
+  Parameter | Value
+  ------------------|-------------
+  Microcontroller		|		ATmega32u4
+  Clock Speed		|		16 MHz
+  Operating Voltage		|		5V DC
+  Digital I/O Pins		|		10 
+  PWM Channels		|		4 
+  Analog Input Channels		|		5 
+  UART		|		1 
+  I2C		|		1 
+  Micro USB		|		1 
+  Power Ports		|		2 
+  Flash Memory		|		 32 KB (4KB used by bootloader)
+  SRAM		|		 2.5 KB
+  EEPROM		|		 1 KB
+  Size          |  20x22x3.8mm
 
 
 ## Resources:
@@ -77,14 +98,6 @@ Keyboard/) PIC18F14K50. Complete parts kit: $25.00 (sold out) Programable w/Modi
 CPU Board Choices:
 
 
-Part                            |CPU        |I/O | Mhz | Size        |   Notes
---------------------------------|-----------|---:|----:|-------------|---------
-Beetle 1738-1016-ND             |ATmega32u4 | 10 |16   | 20x22x3.8mm | Arduino Leonardo
-µduino ($18, 15-March)          |ATmega32u4 | 20 |16   | 12x12mm     |
-KeyTee (open-source)            |ATmega32u2 | 20 |16   | ?mm     |
-Mega32u2_v2 (open-source)       |ATmega32u2 | 19 |16   | 19.05x19.05mm |  $2.85 at OSHpark + components. USB
-
-
 See also: http://atmega32-avr.com/avr-comparison/
 
                 ROM     EEROM   SRAM    I/O
@@ -92,23 +105,17 @@ See also: http://atmega32-avr.com/avr-comparison/
     ATmega32u2  32K     1K      1.0K    22
 
 
-    Beetle:
-        Flash Memory: 32 KB of which 4 KB used by bootloader
-        SRAM: 2.5 KB
-        EEPROM: 1 KB
 
-    uduino: https://www.crowdsupply.com/uduino/uduino
-        Flash Memory: 28 KB available for programming, 4 KB for the bootloader
-        
-    KeyTee: https://github.com/trebb/keyteehttps://github.com/trebb/keytee
-                
-
-## Related projects:
+## Related / Alternate projects:
 
 [Mini-Emoticon-Keyboard](http://www.instructables.com/id/Mini-Emoticon-Keyboard/)
 https://trebb.github.io/keytee/
 
+Clueboard Switch Tester Kit Or Assembled
+    https://clueboard.co/parts/clueboard-switch-tester
 
-
+NovelKeys 
+    https://www.novelkeys.xyz/product-category/switchtesters/
+    
 
 
