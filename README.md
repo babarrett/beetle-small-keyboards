@@ -22,6 +22,22 @@ are: Command (or Windows), Option, Control, and Shift.
 
 The thought is these could be used to support users with some hand problems.
 
+## Basic Beetle Specifications:
+
+  Microcontroller		|		ATmega32u4
+  Clock Speed		|		16 MHz
+  Operating Voltage		|		5V DC
+  Digital I/O Pins		|		10 
+  PWM Channels		|		4 
+  Analog Input Channels		|		5 
+  UART		|		1 
+  I2C		|		1 
+  Micro USB		|		1 
+  Power Ports		|		2 
+  Flash Memory		|		 32 KB (4KB used by bootloader)
+  SRAM		|		 2.5 KB
+  EEPROM		|		 1 KB
+
 
 ## Parts list
 
