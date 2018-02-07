@@ -24,6 +24,8 @@ The thought is these could be used to support users with some hand problems.
 
 ## Basic Beetle Specifications:
 
+  Parameter | Value
+  ------------------|-------------
   Microcontroller		|		ATmega32u4
   Clock Speed		|		16 MHz
   Operating Voltage		|		5V DC
