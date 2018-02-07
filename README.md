@@ -17,11 +17,15 @@ I/O pins plus a USB port for small projects. This combination is ideal for:
 ## Initial project: 4 foot switches
 
 My first project based on this technology is a foot-operated set of 4 (or 8)
-switches. The plan is to support four modifier keys, to b foot-operated. They
+switches. The plan is to support four modifier keys, to be foot-operated. They
 are: Command (or Windows), Option, Control, and Shift.
 
 The thought is these could be used to support users with some hand problems.
 
+This project will not require the manufacture of any printed circuit boards, 
+and the switches will be hand-wired to the Beetle.
+
+Parts count, and expense are low.
 
 ## Parts list
 
