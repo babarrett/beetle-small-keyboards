@@ -49,7 +49,7 @@ application.
 * ?? Case Serpac 111i project box. Install RCA sockets in top. 
 [digikey](https://www.digikey.com/product-detail/en/serpac/110IBK/SR110-IB-ND/95415) $4.50
 * ?? PCB
-* (not needed) 5v, 8 bit shift reg. $0.43 https://www.digikey.com/product-detail/en/texas-instruments/SN74HC164N/296-8248-5-ND/376946
+* (for expanded experiments) 5v, 8 bit shift reg. $0.43 [Digikey](https://www.digikey.com/product-detail/en/texas-instruments/SN74HC164N/296-8248-5-ND/376946)
 
 Beetle $7.90 [Digikey](https://www.digikey.com/product-detail/en/dfrobot/DFR0282/1738-1016-ND/6588438)
 USB + 10 I/O; 20mm x 22mm
@@ -58,11 +58,12 @@ USB + 10 I/O; 20mm x 22mm
 
 Part                |Qty| Jameco  |URL
 --------------------|---|--------:|----
-Adafruit Beetle     | 1 | $7.90   | 
-5 RCA jacks         | 2 | $1.95   | 
-4 RCA sockets (1x3")| 2 | $0.49   | 
-Case                | 1 |         | 
-USB-A to USB=B      | 1 |         | 
+Adafruit Beetle     | 1 | $9.95   | [2213325](https://www.jameco.com/z/DFR0282-DFRobot-Beetle-Microcontroller-Arduino-Compatible-_2213325.html)
+5 Red RCA jacks     | 2 | $1.95   | [22930](https://www.jameco.com/z/JR1625R-Red-Plastic-RCA-Plug-Pack-of-5-_229930.html)
+5 Red RCA jacks     | 2 | $1.95   | [229921](https://www.jameco.com/z/JR1625BLK-Black-Plastic-RCA-Plug-Pack-of-5-_229921.html)
+4 RCA sockets (1x3")| 2 | $0.49   | [319429](https://www.jameco.com/z/CA066-Velleman-RCA-Jacks-2-Stereo-Pairs-Red-Black-Nickel-Plated_319249.html)
+Case                | 1 |         | [675462](https://www.jameco.com/z/111-BK-Serpac-Electronic-Enclosures-Enclosure-Black-111-Bk-Hi-Impact-Abs-Plastic_675462.html)
+USB-A to USB-micro  | 1 |         | []()
 Foot switch (4)     | 4 | $4.00   | 
 xx                  | xx|         | 
 Estimated total     | xx|         | 
@@ -117,5 +118,25 @@ Clueboard Switch Tester Kit Or Assembled
 NovelKeys 
     https://www.novelkeys.xyz/product-category/switchtesters/
     
+```
+        IO Port Mapping in correspondence with Arduino Ports:
+                                PWM     Analog
+        Silkscreen	Digital Pin	Channel Channel	UART	    I2C
+            RX	        0	                    Serial-RX
+            TX	        1	                    Serial-TX
+            SDA	        2	                                SDA
+            SCL	        3	    3	                        SCL
+            9	        9	    9	    A9		
+            10	        10	    10	    A10		
+            11	        11	    11	        
+            A0	        A0	            A0		
+            A1	        A1	            A1		
+            A2	        A2	            A2		
+
+        Power interface:
+            Silkscreen	Description
+            +           VCC
+            -           GND
+```
 
 
