@@ -44,15 +44,6 @@ application.
 
 ## Parts list
 
-* 3.5 mm socket (need 4+) $0.74ea https://www.digikey.com/product-detail/en/cui-inc/SJ1-3523N/CP1-3523N-ND/738689
-* 3.5mm jack (need 4+) $0.84ea  https://www.digikey.com/product-detail/en/cui-inc/MP3-3501/CP3-1005-ND/992141
-* ?? Case Serpac 111i project box. Install RCA sockets in top. 
-[digikey](https://www.digikey.com/product-detail/en/serpac/110IBK/SR110-IB-ND/95415) $4.50
-* ?? PCB
-* (for expanded experiments) 5v, 8 bit shift reg. $0.43 [Digikey](https://www.digikey.com/product-detail/en/texas-instruments/SN74HC164N/296-8248-5-ND/376946)
-
-Beetle $7.90 [Digikey](https://www.digikey.com/product-detail/en/dfrobot/DFR0282/1738-1016-ND/6588438)
-USB + 10 I/O; 20mm x 22mm
 
 
 
@@ -63,9 +54,19 @@ Adafruit Beetle     | 1 | $9.95   | [2213325](https://www.jameco.com/z/DFR0282-D
 4 RCA sockets (1x3")| 2 | $0.49   | [319429](https://www.jameco.com/z/CA066-Velleman-RCA-Jacks-2-Stereo-Pairs-Red-Black-Nickel-Plated_319249.html)
 Case                | 1 | $4.95   | [675462](https://www.jameco.com/z/111-BK-Serpac-Electronic-Enclosures-Enclosure-Black-111-Bk-Hi-Impact-Abs-Plastic_675462.html)
 USB-A to USB-micro B| 1 | $1.95   | [2196086](https://www.jameco.com/z/IFA-A104-3-Foot-USB-micro-B-Data-Sync-Charging-Cable_2196086.html)
-Foot switches (4)   | 4 | $4.00   | (Tatoo, drom China)
+Foot switches (4)   | 4 | $14.00   | (Tatoo, drom China)
 ----------------    |---|-------- | 
-Estimated total     |   |$23.29   | 
+Estimated total     |   |$33.29   | 
+
+### Alternate part options:
+
+* Beetle $7.90 [Digikey](https://www.digikey.com/product-detail/en/dfrobot/DFR0282/1738-1016-ND/6588438). USB + 10 I/O; 20mm x 22mm
+* 3.5 mm socket (need 4+) $0.74ea [Digikey](https://www.digikey.com/product-detail/en/cui-inc/SJ1-3523N/CP1-3523N-ND/738689)
+* 3.5mm jack (need 4+) $0.84ea  [Digikey](https://www.digikey.com/product-detail/en/cui-inc/MP3-3501/CP3-1005-ND/992141)
+* Case 3.6 x 2.25 x 1". Serpac 111i project box. Install RCA sockets in top. 
+[digikey](https://www.digikey.com/product-detail/en/serpac/110IBK/SR110-IB-ND/95415) $4.50
+* (for expanded experiments) 5v, 8 bit shift reg. $0.43 [Digikey](https://www.digikey.com/product-detail/en/texas-instruments/SN74HC164N/296-8248-5-ND/376946)
+
 
 
 ## Basic Beetle Specifications:
@@ -90,36 +91,33 @@ Estimated total     |   |$23.29   |
 
 ## Related / Alternate projects:
 
-[Mini-Emoticon-Keyboard](http://www.instructables.com/id/Mini-Emoticon-Keyboard/
+* [Mini-Emoticon-Keyboard](http://www.instructables.com/id/Mini-Emoticon-Keyboard/
 ) using the similar Adafruit Trinket.
-
-The keytee project. [GitHub](https://github.com/trebb/keytee) project. 
+* The keytee project. [GitHub](https://github.com/trebb/keytee) project. 
 [Project files](https://trebb.github.io/keytee/pcb.pdf). Same processor, custom PCB.
+* [Clueboard](https://clueboard.co/parts/clueboard-switch-tester) Switch Tester
+Kit, or Assembled  
+* NovelKeys [switch tester](https://www.novelkeys.xyz/product-category/switchtesters/)
 
-[Clueboard](https://clueboard.co/parts/clueboard-switch-tester) Switch Tester
-Kit, or Assembled
-    
-
-NovelKeys 
-    https://www.novelkeys.xyz/product-category/switchtesters/
-    
+## IO Port Mapping Beetle to Arduino Ports:
 ```
-        IO Port Mapping in correspondence with Arduino Ports:
-                                PWM     Analog
-        Silkscreen	Digital Pin	Channel Channel	UART	    I2C
-            RX	        0	                    Serial-RX
-            TX	        1	                    Serial-TX
-            SDA	        2	                                SDA
-            SCL	        3	    3	                        SCL
-            9	        9	    9	    A9		
-            10	        10	    10	    A10		
-            11	        11	    11	        
-            A0	        A0	            A0		
-            A1	        A1	            A1		
-            A2	        A2	            A2		
+        
+          Beetle    Digital   PWM   Analog
+        Silkscreen	  Pin   Channel Channel	UART	    I2C
+            RX	        0	                Serial-RX
+            TX	        1	                Serial-TX
+            SDA	        2	                            SDA
+            SCL	        3	   3	                    SCL
+            9	        9	   9	  A9		
+            10	        10	  10	  A10		
+            11	        11	  11	        
+            A0	        A0	          A0		
+            A1	        A1	          A1		
+            A2	        A2	          A2		
 
-        Power interface:
-            Silkscreen	Description
+        Power:
+          Beetle
+        Silkscreen	Description
             +           VCC
             -           GND
 ```
