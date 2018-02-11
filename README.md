@@ -5,11 +5,11 @@
 Sometimes you don't need many keys for a project, and the Arduino Beetle has 10
 I/O pins plus a USB port for small projects. This combination is ideal for:
 
-    * USB based keyboards
+    * USB based keyboards (or mice)
     * Handwired (although PCB options are possible too)
     * One to 10 keys are trivial
-    * Up to 25 keys are not much harder.
-    * Pogramable with macros, layers, supported by TODO: software
+    * Up to 25 keys are not much harder, though a PCB would help.
+    * Pogramable with macros, layers, supported by TODO: {TMK | QMK | Easy AVR} software
     * Numeric pads (often 17, 19, 21, or 22 keys)
     * Converting key "switch testers" to macro pads.
     * Simple, inexpensive hardware
@@ -20,15 +20,15 @@ My first project based on this technology is a foot-operated set of 4 (or 8)
 switches. The plan is to support four modifier keys, to be foot-operated. They
 are: Command (or Windows), Option, Control, and Shift.
 
-The thought is these could be used to support users with some hand problems.
+The thought is that these could be used to support users with some hand problems.
 
 This project will not require the manufacture of any printed circuit boards, 
 and the switches will be hand-wired to the Beetle.
 
 Parts count, and expenses are low.
 
-Because the Beetle has 10 I/O pins available, and I only need 8, I'll (hand)
-wire then directly.
+Because the Beetle has 10 I/O pins available, and I only need 4 (or 8), I'll
+(hand) wire then directly.
 
 ## Additional project
 
@@ -38,7 +38,7 @@ closely matches the physical). These matrixes will require a diode at each
 switch to prevent "ghosting."
 
 For example, searching Amazon for: numeric pad USB, most numeric pads have 17,
-to 22 keys on them, so the little Beetle will be quite capable for this 
+to 22 keys on them, so the little Beetle will be quite capable for this
 application.
 
 
@@ -56,17 +56,16 @@ USB + 10 I/O; 20mm x 22mm
 
 
 
-Part                |Qty| Jameco  |URL
---------------------|---|--------:|----
+Parts for 4 switches|Qty| Jameco  |URL
+--------------------|--:|--------:|----
 Adafruit Beetle     | 1 | $9.95   | [2213325](https://www.jameco.com/z/DFR0282-DFRobot-Beetle-Microcontroller-Arduino-Compatible-_2213325.html)
-5 Red RCA jacks     | 2 | $1.95   | [22930](https://www.jameco.com/z/JR1625R-Red-Plastic-RCA-Plug-Pack-of-5-_229930.html)
-5 Red RCA jacks     | 2 | $1.95   | [229921](https://www.jameco.com/z/JR1625BLK-Black-Plastic-RCA-Plug-Pack-of-5-_229921.html)
+5 Black RCA jacks   | 2 | $1.95   | [229921](https://www.jameco.com/z/JR1625BLK-Black-Plastic-RCA-Plug-Pack-of-5-_229921.html)
 4 RCA sockets (1x3")| 2 | $0.49   | [319429](https://www.jameco.com/z/CA066-Velleman-RCA-Jacks-2-Stereo-Pairs-Red-Black-Nickel-Plated_319249.html)
-Case                | 1 |         | [675462](https://www.jameco.com/z/111-BK-Serpac-Electronic-Enclosures-Enclosure-Black-111-Bk-Hi-Impact-Abs-Plastic_675462.html)
-USB-A to USB-micro  | 1 |         | []()
-Foot switch (4)     | 4 | $4.00   | 
-xx                  | xx|         | 
-Estimated total     | xx|         | 
+Case                | 1 | $4.95   | [675462](https://www.jameco.com/z/111-BK-Serpac-Electronic-Enclosures-Enclosure-Black-111-Bk-Hi-Impact-Abs-Plastic_675462.html)
+USB-A to USB-micro B| 1 | $1.95   | [2196086](https://www.jameco.com/z/IFA-A104-3-Foot-USB-micro-B-Data-Sync-Charging-Cable_2196086.html)
+Foot switches (4)   | 4 | $4.00   | (Tatoo, drom China)
+----------------    |---|-------- | 
+Estimated total     |   |$23.29   | 
 
 
 ## Basic Beetle Specifications:
@@ -89,31 +88,17 @@ Estimated total     | xx|         |
   Size          |  20x22x3.8mm
 
 
-## Resources:
-
-* [Quick Key Adapter, 10 Button
-Keyboard](http://www.instructables.com/id/Quick-Key-Adapter-10-Button-HID-
-Keyboard/) PIC18F14K50. Complete parts kit: $25.00 (sold out) Programable w/Modifier keys.
-
-
-CPU Board Choices:
-
-
-See also: http://atmega32-avr.com/avr-comparison/
-
-                ROM     EEROM   SRAM    I/O
-    ATmega32u4  32K     1K      3.3K    26
-    ATmega32u2  32K     1K      1.0K    22
-
-
-
 ## Related / Alternate projects:
 
-[Mini-Emoticon-Keyboard](http://www.instructables.com/id/Mini-Emoticon-Keyboard/)
-https://trebb.github.io/keytee/
+[Mini-Emoticon-Keyboard](http://www.instructables.com/id/Mini-Emoticon-Keyboard/
+) using the similar Adafruit Trinket.
 
-Clueboard Switch Tester Kit Or Assembled
-    https://clueboard.co/parts/clueboard-switch-tester
+The keytee project. [GitHub](https://github.com/trebb/keytee) project. 
+[Project files](https://trebb.github.io/keytee/pcb.pdf). Same processor, custom PCB.
+
+[Clueboard](https://clueboard.co/parts/clueboard-switch-tester) Switch Tester
+Kit, or Assembled
+    
 
 NovelKeys 
     https://www.novelkeys.xyz/product-category/switchtesters/
