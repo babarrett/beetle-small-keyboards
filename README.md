@@ -122,4 +122,25 @@ Kit, or Assembled
             -           GND
 ```
 
+## Getting Started
+
+Development resources:
+
+* [Summary](https://deskthority.net/wiki/Easy_AVR_USB_Keyboard_Firmware) on Deskthority
+* All the code and documentation on [GitHub](https://github.com/dhowland/EasyAVR/releases)
+
+
+1. Plug-it in
+2. Blue LED on the Beetle should flash
+3. macOS:
+    - Apple menu, About this Mac
+    - Click System Report...
+    - Select USB from the left column
+    - Look for Arduine Leonardo in the USB tree
+4. Windows:
+    - TODO: 
+    - aa
+
+## Load the new software
+
 
