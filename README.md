@@ -107,13 +107,13 @@ Kit, or Assembled
             RX	        0	                Serial-RX
             TX	        1	                Serial-TX
             SDA	        2	                            SDA
-            SCL	        3	   3	                    SCL
-            9	        9	   9	  A9		
+            SCL	        3	     3	                    SCL
+            9	          9	     9	  A9		
             10	        10	  10	  A10		
             11	        11	  11	        
-            A0	        A0	          A0		
-            A1	        A1	          A1		
-            A2	        A2	          A2		
+            A0	        A0	        A0		
+            A1	        A1	        A1		
+            A2	        A2	        A2		
 
         Power:
           Beetle
@@ -144,3 +144,17 @@ Development resources:
 ## Load the new software
 
 
+Development order for Beetle experiments (Arduino-only code)
+  * reset keyboard/controller after completing task
+  * Compute 4-function calculator operations (say 20 different ones) in *floating point**, 100, 1000, 10,000 times. Time them and report. Use random numbers?
+  * Create a calculator that takes character array (string) input, treats each as a keystroke. Repeat 10,000 times. Report elapse time & result.
+    * example: 123+222=345
+    * 1/9*9*1000/0.5+800.765=2800.76499999998
+  * Repeat calcs and timing with "BigNumber" -- https://github.com/nickgammon/BigNumber  
+    * Mac OS X calculator seems to display and retain up to 19 digits
+    * Arduino LCD display is 2 x 16 characters. (We could use more and have "guard digits")
+    * Sun serial (1200 baud, start, stop) by Ben Rockwood, https://github.com/benr/SunType5_ArduinoAdapter_
+      SoftwareSerial sunSerial(10, 11, true); // rxpin txpin, reverse logic (yes)
+
+    
+  
