@@ -157,4 +157,18 @@ Development order for Beetle experiments (Arduino-only code)
       SoftwareSerial sunSerial(10, 11, true); // rxpin txpin, reverse logic (yes)
 
     
+Using usb keyboard: https://www.pjrc.com/teensy/td_keyboard.html
+Google:   arduino sending scan codes to usb keyboard
+
+
+## Hardware tasks
+```
+2-wire Arduino to LCD project:  http://www.instructables.com/id/2-Wire-LCD-interface-for-Arduino-or-Attiny/
+and again (2011): http://3g1l.com/blog-cheap-arduino-2-wire-lcd-display-0
+and again (2012): https://scargill.wordpress.com/tag/2-wire-lcd-for-arduino-a-working-example/
+and again:        https://playground.arduino.cc/Code/LCD3wires
+
+Sun kbd to USB via Beetle:
+  Load code, test, point Sun-only codes for F13-F24 or so. Test.  
   
+```
