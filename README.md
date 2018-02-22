@@ -145,7 +145,7 @@ Development resources:
 
 
 Development order for Beetle experiments (Arduino-only code)
-  * reset keyboard/controller after completing task
+  √ reset keyboard/controller after completing task
   * Compute 4-function calculator operations (say 20 different ones) in *floating point**, 100, 1000, 10,000 times. Time them and report. Use random numbers?
   * Create a calculator that takes character array (string) input, treats each as a keystroke. Repeat 10,000 times. Report elapse time & result.
     * example: 123+222=345
@@ -158,3 +158,6 @@ Development order for Beetle experiments (Arduino-only code)
 
     
   
+keyboard.println() is broken. Space instead of \n.
+scan codes instear od keyboard.print
+Buffered USB for > 6 KRO
