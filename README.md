@@ -146,10 +146,14 @@ Development resources:
 
 Development order for Beetle experiments (Arduino-only code)
   √ reset keyboard/controller after completing task
-  * Compute 4-function calculator operations (say 20 different ones) in *floating point**, 100, 1000, 10,000 times. Time them and report. Use random numbers?
+  * Compute 4-function calculator operations (say 20 different ones) in
+  *floating point*, 100, 1000, 10,000 times. Time millis them and
+  report. Use random numbers?
+  * 
   * Create a calculator that takes character array (string) input, treats each as a keystroke. Repeat 10,000 times. Report elapse time & result.
     * example: 123+222=345
     * 1/9*9*1000/0.5+800.765=2800.76499999998
+    * Maybe use PString for display: http://arduiniana.org/libraries/PString/
   * Repeat calcs and timing with "BigNumber" -- https://github.com/nickgammon/BigNumber  
     * Mac OS X calculator seems to display and retain up to 19 digits
     * Arduino LCD display is 2 x 16 characters. (We could use more and have "guard digits")
@@ -157,7 +161,21 @@ Development order for Beetle experiments (Arduino-only code)
       SoftwareSerial sunSerial(10, 11, true); // rxpin txpin, reverse logic (yes)
 
     
+Using usb keyboard: https://www.pjrc.com/teensy/td_keyboard.html
+Google:   arduino sending scan codes to usb keyboard
+
+
+## Hardware tasks
+```
+2-wire Arduino to LCD project:  http://www.instructables.com/id/2-Wire-LCD-interface-for-Arduino-or-Attiny/
+and again (2011): http://3g1l.com/blog-cheap-arduino-2-wire-lcd-display-0
+and again (2012): https://scargill.wordpress.com/tag/2-wire-lcd-for-arduino-a-working-example/
+and again:        https://playground.arduino.cc/Code/LCD3wires
+
+Sun kbd to USB via Beetle:
+  Load code, test, point Sun-only codes for F13-F24 or so. Test.  
   
 keyboard.println() is broken. Space instead of \n.
 scan codes instear od keyboard.print
 Buffered USB for > 6 KRO
+```
