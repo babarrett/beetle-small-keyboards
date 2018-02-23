@@ -146,19 +146,28 @@ Development resources:
 
 Development order for Beetle experiments (Arduino-only code)
   √ reset keyboard/controller after completing task
-  * Compute 4-function calculator operations (say 20 different ones) in
-  *floating point*, 100, 1000, 10,000 times. Time millis them and
-  report. Use random numbers?
-  * 
-  * Create a calculator that takes character array (string) input, treats each as a keystroke. Repeat 10,000 times. Report elapse time & result.
+  √ 4-function calculator operations in *floating point* timing 1.5 million times. Time millis and report. Use random numbers?
+  * Repeat timing with *BigNumbers*
+  * Create a calculator that takes character array (string) input, treats each as a keystroke. Repeat 100,000 times. Report elapse time & result.
     * example: 123+222=345
     * 1/9*9*1000/0.5+800.765=2800.76499999998
     * Maybe use PString for display: http://arduiniana.org/libraries/PString/
   * Repeat calcs and timing with "BigNumber" -- https://github.com/nickgammon/BigNumber  
     * Mac OS X calculator seems to display and retain up to 19 digits
-    * Arduino LCD display is 2 x 16 characters. (We could use more and have "guard digits")
-    * Sun serial (1200 baud, start, stop) by Ben Rockwood, https://github.com/benr/SunType5_ArduinoAdapter_
-      SoftwareSerial sunSerial(10, 11, true); // rxpin txpin, reverse logic (yes)
+    * Arduino LCD display is 2 x 16 characters. (We could use more and have "guard digits") some 4x20 displays too
+  * Sun serial (1200 baud, start, stop, inverted) by Ben Rockwood
+    * https://github.com/benr/SunType5_ArduinoAdapter_SoftwareSerial
+    * sunSerial(10, 11, true); // rxpin txpin, reverse logic (yes); connect to serial pads under Beetle
+    * Light LED on every correctly received serial character. Blink twice if error
+    * Connect to G80-9009 via breadboard (no DIN needed)
+    * Look to see if any charactrs come through a) for main Kbd; b) for ancillary keys.
+    * Install Sun scan code table, and output to USB for verification.
+    * Pull request for Ben Rockwood's Sun to USB adapter. (docs)
+    * Increase 6KRO to many, many KRO with buffer
+  * Sun keyboard scan code resources
+    * http://www.quadibloc.com/comp/scan.htm
+    * https://kentie.net/article/sunkbd/sun%20keys.txt
+    * 
 
     
 Using usb keyboard: https://www.pjrc.com/teensy/td_keyboard.html
@@ -171,6 +180,11 @@ Google:   arduino sending scan codes to usb keyboard
 and again (2011): http://3g1l.com/blog-cheap-arduino-2-wire-lcd-display-0
 and again (2012): https://scargill.wordpress.com/tag/2-wire-lcd-for-arduino-a-working-example/
 and again:        https://playground.arduino.cc/Code/LCD3wires
+or "just buy it" ebay search: arduino 2 wire lcd. 4 x 20 = less than $10
+                                                  Module dimension: 99mm x 60mm x 12mm.
+                                                  Viewing area size: 64.5mm x 16mm
+
+
 
 Sun kbd to USB via Beetle:
   Load code, test, point Sun-only codes for F13-F24 or so. Test.  
